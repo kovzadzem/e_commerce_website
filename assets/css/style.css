@@ -21,6 +21,7 @@ text-decoration: none;
   --black: #000000;
   --white: #ffff;
   --seccondary: #F5F5F5;
+  --secondary-2: #DB4444;
 }
 
 .container{
@@ -31,6 +32,9 @@ text-decoration: none;
 
 .bg-secondary {
   background-color: var(--seccondary);
+}
+.bg-black {
+  background-color: var(--black);
 }
 
 .poppins-bold {
@@ -69,9 +73,19 @@ text-decoration: none;
 .relative {
   position: relative;
 }
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
+
+.direction-column {
+  flex-direction: column;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -97,6 +111,33 @@ text-decoration: none;
 .g-48 {
   gap: 48px;
 }
+.pointer {
+    cursor: pointer;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.border-right {
+  border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+.tag{
+color: var(--secondary-2);
+& span {
+  &:first-child {
+    display: inline-block;
+  width: 20px;
+  height: 40px;
+  background-color:var(--secondary-2);
+  border-radius: 4px;
+  /*margin-right: 16px;*/
+  }
+}
+ }
+
+
 
 header {
  & .promotion {
@@ -132,3 +173,75 @@ margin-bottom: 40px;
   }
    }
   
+
+.welcome {
+    & aside {
+        width: 216px;
+        padding-top: 40px;
+        padding-right: 16px;
+        & li {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            &:nth-child(1) {
+                & svg {
+                    transform: rotate(-90deg);
+                }
+            }
+            &:nth-child(2){
+                & svg {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+  }
+  & .welcome-wrapper {
+       margin-top: 40px;
+       margin-left: 45px;
+       color: var(--white);
+        & .text-content {
+        padding-left: 64px;
+        padding-block: 48px; 
+        & h2{
+          font-size:48px;
+          margin-block: 20px;
+        }
+      }
+      & a{
+        background-color:transparent;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+        color:inherit;
+        padding-bottom: 4px;
+      }
+        & .image-wrapper {
+
+        }
+    }
+
+
+
+
+.flash-sales {
+  
+  & .countdown-wrapper {
+    & .time {
+      & .days {
+
+      }
+      & .day{
+         font-size: 32px;
+      }
+      & .semicolon {
+
+        & .dot {
+          width: 4px;
+          height: 4px;
+          background-color:#E07575;
+          border-radius: 50%;
+
+        }
+      }
+    }
+  }
+    }
