@@ -227,7 +227,7 @@ margin-bottom: 40px;
   & .countdown-wrapper {
     & .time {
       & .days {
-
+        font-size: 12px;
       }
       & .day{
          font-size: 32px;
